@@ -1,0 +1,117 @@
+@import '../../../../../../styles/styles'
+
+[data-bomb] 
+    color: #000
+
+.classic--button 
+    align-items: center
+    display: flex
+    font-weight: bold
+    height: 30px
+    justify-content: center
+    width: 30px
+    @include borders
+    @include buttons
+    
+    &__visible 
+        border-color: #7b7b7b
+        border-width: 1px
+
+    &__red 
+        background: red
+        
+    &.value-1 
+        color: blue
+        
+    &.value-2 
+        color: green
+        
+    &.value-3 
+        color: red
+        
+    &.value-4 
+        color: purple
+        
+    &.value-5 
+        color: maroon
+        
+    &.value-6 
+        color: turquoise
+        
+    &.value-7 
+        color: black
+        
+    &.value-8 
+        color: gray
+
+    &:focus 
+        outline: none
+
+    span 
+        font-size: 12px
+        margin-left: 2px
+
+
+.skeuomorph--button 
+    align-items: center
+    display: flex
+    font-weight: bold
+    height: 30px
+    justify-content: center
+    width: 30px
+
+    &:focus 
+        outline: none
+        background: linear-gradient(180deg,#efeff3 0%,#f2f5f7 0.01%,#dce7f2 100%)
+        box-shadow: 0px 1.68px 1.68px #96bbe1, 0px 3.36px 4.2px rgba(0, 0, 0, 0.1)
+        border-radius: 50%
+        margin: 1px
+
+        &__visible 
+            background: #e3edf7
+            box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #ffffff
+            border-radius: 21px
+        
+        &__red 
+            background: #ef0000
+            box-shadow: inset 3px 3px 7px rgba(140, 45, 45, 0.48), inset -3px -3px 7px #ff9d9d
+            border-radius: 21px    
+
+        &__red 
+            background: #fc3c00
+        
+        &.value-1 
+            color: #0086ff
+        
+        &.value-2 
+            color: #f06500
+        
+        &.value-3 
+            color: #8d8bff
+        
+        &.value-4 
+            color: #00c35a
+        
+        &.value-5 
+            color: #fcd400
+        
+        &.value-6 
+            color: #fc3c00
+        
+        &.value-7 
+            color: #9c00fc
+        
+        &.value-8 
+            color: #fc0079
+
+.bomb
+    width: 20px
+    margin-top: 3px
+
+.flag
+    width: 30px
+    margin-top: 5px
+
+.question
+    width: 15px
+    margin-top: 3px

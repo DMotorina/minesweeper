@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after 
+    position: relative
+    box-sizing: border-box
+
+#root
+    --color-primary: #00aef2
+    background: #E0E0E0
+html,
+body 
+    height: 100%
+    width: 100%
+
+body 
+    margin: 0
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    display: flex
+    justify-content: center
+    align-items: center
+
+code 
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+button,
+input,
+optgroup,
+select,
+textarea 
+    font-family: inherit /* 1 */
+    font-size: 100% /* 1 */
+    line-height: 1.15 /* 1 */
+    margin: 0 /* 2 */
+    background: none
+    border: none
+
+button,
+input 
+    overflow: visible
+
+button,
+select
+    text-transform: none
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] 
+    -webkit-appearance: button
+
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap')
+
+#root 
+    width: 100%
+    height: 100%
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.background-black 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.nav 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 60px
+    z-index: 2
+    display: flex
+    align-items: center
+    background: #fff
+
+    img 
+        flex-grow: 3
+    
+    &--items 
+        display: flex
